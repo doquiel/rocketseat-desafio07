@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #bfd7e4;
+}
+
+body::before {
+  content: "";
+  background-color: #293241;
+  height: 465px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.page {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.page header {
+  margin-top: 107px;
+  text-align: center;
+}
+
+.page header h1 {
+  color: #fff;
+
+  font-family: Staatliches;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
+
+  text-transform: uppercase;
+}
+
+.page header p {
+  color: #fff;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.page header img {
+  margin-top: 19px;
+  margin-bottom: 32px;
+}
+
+.page main #headerform {
+  min-height: 133px;
+  border-radius: 20px 20px 0px 0px;
+  background: #f67669;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page main #headerform p {
+  color: #fff;
+  font-family: Staatliches;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.page main form {
+  min-height: 300px;
+  border-radius: 0px 0px 20px 20px;
+  background: #fff;
+  padding: 30px 64px 64px 64px;
+
+  margin-bottom: 345px;
+}
+
+.page main form fieldset {
+  border: none;
+}
+
+.page form fieldset .input-name, .page form fieldset .input-date {
+  display: flex;
+  gap: 22px;
+  width: 100%;
+}
+
+.page form fieldset .input-name .input-wrapper, .page form fieldset .input-date .input-wrapper {
+  flex: 1;
+}
+
+.page main form fieldset .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.page main form fieldset .input-wrapper label, .page main form fieldset .checkbox-wrapper {
+  color: #4e4958;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  margin-bottom: 8px;
+}
+
+.page main form fieldset .input-wrapper label span {
+  color: #c1bccc;
+}
+
+.page main form fieldset .input-wrapper input, .page main form fieldset .input-wrapper select, .page main form fieldset .input-wrapper textarea {
+  color: #777282;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  padding: 24px;
+
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white, #e6e6f0);
+  background: var(--Shapes-02, #fafafc);
+  height: 55px;
+}
+
+.page main form fieldset legend {
+  color: #253b51;
+  font-family: Staatliches;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+
+  width: 622px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e6e6f0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.page main form fieldset .input-wrapper select {
+
+  padding: 0px;
+  padding-left: 24px;
+
+  width: 300px;
+}
+
+.page main form fieldset .input-wrapper textarea {
+  height: 167px;
+}
+
+.page main form fieldset .checkbox-wrapper {
+  position: relative; 
+}
+
+.page main form fieldset .checkbox-wrapper input[type="checkbox"] {
+  display: none; 
+}
+
+.page main form fieldset .checkbox-wrapper input[type="checkbox"] + label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.page main form fieldset .checkbox-wrapper input[type="checkbox"] + label::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-color: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  flex-shrink: 0; 
+}
+
+.page main form fieldset .checkbox-wrapper input[type="checkbox"]:checked + label::before {
+
+  
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7' fill='none'%3E%3Cpath d='M1 1.64984L5 5.61617L9 1.64984' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.page main form button {
+  margin-top: 30px;
+
+  width: 100%;
+  height: 51px;
+
+  border: none;
+  border-radius: 8px;
+
+ background: #F67669;
+
+
+ transition: transform 200ms ease-in-out;
+
+ cursor: pointer;
+}
+
+.page main form button:hover {
+  transform: scale(1.02);
+}
+
+.page main form button p {
+  color: #FFF;
+
+  font-family: Staatliches;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
